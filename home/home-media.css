@@ -1,0 +1,72 @@
+/* header */
+@media (max-width: 1168px) {
+    header nav ul {
+        display: none;
+    }
+    header .toggle-btn i {
+        display: block;
+    }
+    header .header-socials {
+        display: none;
+    }
+}
+@media (max-width: 460px) {
+    header {
+        padding: 30px;
+    }
+    header .logo i {
+        font-size: 50px;
+    }
+    header .logo .logo-indication h4 {
+        font-size: 1em;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 700px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
