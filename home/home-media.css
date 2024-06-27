@@ -50,9 +50,6 @@
 	  to {top: 50%;}
 	}
 
-	.txt h1{
-		font-size: 40px;
-	}
 	.txt p{
 		font-size: 13px;
 	}
@@ -68,5 +65,27 @@
 	}
 	.sign a{
 		font-size: 12px;
+	}
+}
+@media (max-width: 900px) {
+	.about {
+		padding: 40px 100px;
+	}
+	.about-intro {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.about-intro .about-title h1 {
+		margin-bottom: 30px;
+	}
+	.about-display {
+		margin-left: 45px;
+	}
+}
+@media (max-width: 590px) {
+	.about {
+		padding: 40px;
 	}
 }

@@ -4,6 +4,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     padding: 40px;
     z-index: 999;
 }
@@ -19,6 +21,7 @@ header .logo i {
 header .logo .logo-indication h4 {
     margin-top: 5px;
     font-size: 1.4em;
+    margin-bottom: 0px;
 }
 header .logo .logo-indication p {
     font-size: 12px;
@@ -56,13 +59,15 @@ header .toggle-btn i {
 }
 .scroll-down header{
     transform: translate3d(0, -100%, 0);
+    transition: .4s;
 }
 .scroll-up header {
     box-shadow: 1px 0px 1px 2px var(--tag-color);
     background-color: var(--background-second);
+    transition: .4s;
 }
 .sidebar {
-    position: absolute;
+    position: fixed;
     display: block;
     top: -100%;
     left: 0;
@@ -125,6 +130,14 @@ header .toggle-btn i {
 /* end header */
 
 /* landing page */
+.cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgb(2, 41, 2), rgba(2, 41, 2, 0.845), rgba(2, 41, 2, 0.599), rgba(2, 41, 2, 0.297), rgba(2, 41, 2, 0.029), rgba(2, 41, 2, 0));
+}
 .slider{
 	position: relative;
 	width: 100%;
@@ -136,6 +149,7 @@ header .toggle-btn i {
 }
 .myslide img {
     object-fit: cover;
+    opacity: .8;
 }
 
 .prev, .next{
@@ -173,7 +187,7 @@ header .toggle-btn i {
 }
 
 .active, .dot:hover{
-	border-color: var(--background-first); /* blue */
+	border-color: var(--background-first); 
 }
 .fade {
   -webkit-animation-name: fade;
@@ -217,12 +231,15 @@ header .toggle-btn i {
 }
 
 .txt h1{
-	color: var(--stroke-color);
+	color: var(--text-color);
     font-size: var(--font-size-h1);
 	margin-bottom: 20px;
 }
-.txt p{
-	font-size: 20px;
+.txt p {
+    margin-bottom: 20px;
+}
+.txt h4 {
+    color: var(--background-second);
 }
 img{
 	transform: scale(1.5, 1.5);
@@ -241,6 +258,36 @@ img{
   from {transform: scale(1, 1);}
   to {transform: scale(1.5, 1.5);}
 }
-
-
 /* end landing page */ 
+
+/* about */
+.about {
+    margin-top: 150px;
+    padding: 40px 150px;
+}
+.about-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.about-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.about-display .about-icons {
+    width: 150px;
+    align-items: center;
+    text-align: center;
+}
+.about-display .about-icons i {
+    font-size: 55px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--stroke-color);
+    margin-bottom: 10px;
+}
+/* end about */
